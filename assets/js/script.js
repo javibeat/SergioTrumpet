@@ -74,7 +74,27 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    // 4. Update Footer Year
+    // 4. Auto-hide Past Gigs
+    const filterPastGigs = () => {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // Normalize to start of day
+
+        const gigItems = document.querySelectorAll('.gig-item');
+        gigItems.forEach(item => {
+            const gigDateStr = item.getAttribute('data-date');
+            if (gigDateStr) {
+                const gigDate = new Date(gigDateStr);
+                // If the gig date is before today, hide it
+                if (gigDate < today) {
+                    item.style.display = 'none';
+                }
+            }
+        });
+    };
+
+    filterPastGigs();
+
+    // 5. Update Footer Year
     const yearSpan = document.getElementById('year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
