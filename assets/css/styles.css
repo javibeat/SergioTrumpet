@@ -724,36 +724,35 @@ h3 {
 }
 
 .gigs-list {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .gig-item {
     display: flex;
     align-items: center;
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 20px 30px;
-    transition: background var(--transition-fast), transform var(--transition-fast);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    transition: background var(--transition-fast);
 }
 
 .gig-item:hover {
     background: var(--c-accent);
     color: var(--c-bg-base);
-    transform: translateX(10px);
-    border-color: var(--c-accent);
 }
 
 .gig-item:hover .gig-date .day,
 .gig-item:hover .gig-date .month,
 .gig-item:hover .gig-details h3,
-.gig-item:hover .gig-details p,
-.gig-item:hover .btn-outline {
+.gig-item:hover .gig-details p {
     color: var(--c-bg-base);
-    border-color: var(--c-bg-base);
 }
 
 .gig-date {
