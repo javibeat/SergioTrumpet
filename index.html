@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergio Signature | International Trumpet Player & DJ</title>
 
+    <!-- Preloads for LCP & Performance -->
+    <link rel="preload" as="image" href="assets/img/1.jpg">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" as="style">
+
     <!-- Icons -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="apple-touch-icon" href="assets/img/favicon.png">
 
     <!-- SEO & AEO Meta Tags -->
-    <meta name="description"
-        content="Sergio Signature is a renowned international trumpet player and DJ, seamlessly blending live trumpet performances with energetic electronic music sets.">
-    <meta name="keywords"
-        content="Sergio Trumpet, DJ Sergio, Live Trumpet DJ, Electronic Music, Live Instruments, Ibiza DJ, International DJ">
+    <meta name="description" content="Sergio Signature is a renowned international artist blending live trumpet performances with energetic electronic music sets in Ibiza and globally.">
+    <meta name="keywords" content="Sergio Trumpet, DJ Sergio, Live Trumpet DJ, Electronic Music, Live Instruments, Ibiza DJ, International DJ, House Music">
     <meta name="author" content="Sergio Signature">
 
     <!-- Open Graph Metadata -->
@@ -35,32 +37,38 @@
         content="Seamlessly blending live trumpet performances with dynamic electronic music sets across the globe.">
     <meta name="twitter:image" content="https://javibeat.github.io/SergioTrumpet/assets/img/og-image.jpg">
 
-    <!-- JSON-LD Structured Data for AEO -->
+    <!-- JSON-LD Structured Data for AEO (Answer Engine Optimization) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Musician",
+      "@type": "MusicGroup",
       "name": "Sergio Signature",
-      "alternateName": "Sergio Trumpet DJ",
+      "alternateName": ["Sergio Trumpet DJ", "Live Trumpet DJ"],
       "url": "https://javibeat.github.io/SergioTrumpet/",
       "image": "https://javibeat.github.io/SergioTrumpet/assets/img/og-image.jpg",
       "sameAs": [
         "https://www.instagram.com/sergio.signature/",
         "https://www.instagram.com/sergiotrumpetdj/"
       ],
-      "jobTitle": "Trumpet Player & DJ",
       "genre": [
         "Electronic",
         "House",
+        "Deep Tech",
+        "Melodic House",
         "Live Instrument"
       ],
-      "description": "International DJ and trumpet player blending live instruments with electronic sets.",
+      "description": "International artist blending live trumpet performances with energetic electronic music and house sets perfect for Ibiza-style venues and massive festival stages.",
       "knowsAbout": [
         "Music Production",
-        "Live Performance",
-        "DJing",
-        "Trumpet"
-      ]
+        "Live Trumpet Performance",
+        "Electronic Dance Music (EDM)",
+        "DJing"
+      ],
+      "agent": {
+        "@type": "Person",
+        "name": "Sergio Signature",
+        "jobTitle": "Trumpet Player & DJ"
+      }
     }
     </script>
 
@@ -105,9 +113,9 @@
                 </ul>
                 <div class="nav-socials">
                     <a href="https://www.instagram.com/sergio.signature/" target="_blank" rel="noopener noreferrer"
-                        class="social-icon">IG</a>
+                        class="social-icon" aria-label="Sergio Signature Personal Instagram">IG</a>
                     <a href="https://www.instagram.com/sergiotrumpetdj/" target="_blank" rel="noopener noreferrer"
-                        class="social-icon">DJ</a>
+                        class="social-icon" aria-label="Sergio Signature DJ Official Instagram">DJ</a>
                 </div>
             </nav>
         </div>
@@ -153,7 +161,7 @@
             <div class="container about-grid">
                 <div class="about-image-wrapper reveal-left">
                     <div class="about-image">
-                        <img src="assets/img/2.jpg" alt="Sergio performing live with trumpet">
+                        <img src="assets/img/2.jpg" alt="Sergio Signature live performance with trumpet over electronic beat" loading="lazy" decoding="async">
                         <div class="image-overlay-accent"></div>
                     </div>
                 </div>
@@ -179,11 +187,12 @@
                 </div>
 
                 <div class="music-grid">
-                    <!-- Placeholder cards for sets -->
+                    <!-- Cards for sets (Using explicit img tag for SEO & Lazy loading) -->
                     <div class="music-card reveal-up" style="transition-delay: 0.1s;">
-                        <div class="music-card-image" style="background-image: url('assets/img/3.jpg');">
+                        <div class="music-card-image">
+                            <img src="assets/img/3.jpg" alt="Sunset Beach Sessions - Melodic House and Live Trumpet by Sergio Signature" loading="lazy" decoding="async">
                             <div class="play-btn-overlay">
-                                <div class="play-btn">▶</div>
+                                <button class="play-btn" aria-label="Play Sunset Beach Sessions">▶</button>
                             </div>
                         </div>
                         <div class="music-card-content">
@@ -194,9 +203,10 @@
                     </div>
 
                     <div class="music-card reveal-up" style="transition-delay: 0.2s;">
-                        <div class="music-card-image" style="background-image: url('assets/img/1.jpg');">
+                        <div class="music-card-image">
+                            <img src="assets/img/1.jpg" alt="Club Midnight Mix - Deep Tech and Brass live set" loading="lazy" decoding="async">
                             <div class="play-btn-overlay">
-                                <div class="play-btn">▶</div>
+                                <button class="play-btn" aria-label="Play Club Midnight Mix">▶</button>
                             </div>
                         </div>
                         <div class="music-card-content">
@@ -207,9 +217,10 @@
                     </div>
 
                     <div class="music-card reveal-up" style="transition-delay: 0.3s;">
-                        <div class="music-card-image" style="background-image: url('assets/img/2.jpg');">
+                        <div class="music-card-image">
+                            <img src="assets/img/2.jpg" alt="Festival Mainstage - High Energy Electronic performance by DJ Sergio" loading="lazy" decoding="async">
                             <div class="play-btn-overlay">
-                                <div class="play-btn">▶</div>
+                                <button class="play-btn" aria-label="Play Festival Mainstage">▶</button>
                             </div>
                         </div>
                         <div class="music-card-content">
@@ -235,115 +246,87 @@
 
                 <div class="gigs-list">
                     <!-- Gig Items -->
-                    <div class="gig-item" data-date="2026-02-20">
+                    <div class="gig-item" data-date="2026-03-19T23:59:00">
                         <div class="gig-date">
-                            <span class="day">20</span>
-                            <span class="month">FEB</span>
+                            <span class="day"></span>
+                            <span class="month"></span>
+                        </div>
+                        <div class="gig-details">
+                            <h3>The Loft Art</h3>
+                            <p>Jazz Concert // Marbella</p>
+                        </div>
+                        <div class="gig-action">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Booking Info">Info</a>
+                        </div>
+                    </div>
+
+                    <div class="gig-item" data-date="2026-03-20T15:30:00">
+                        <div class="gig-date">
+                            <span class="day"></span>
+                            <span class="month"></span>
+                        </div>
+                        <div class="gig-details">
+                            <h3>La Fonde</h3>
+                            <p>15:30H // Marbella</p>
+                        </div>
+                        <div class="gig-action">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Booking Info">Info</a>
+                        </div>
+                    </div>
+
+                    <div class="gig-item" data-date="2026-03-20T22:00:00">
+                        <div class="gig-date">
+                            <span class="day"></span>
+                            <span class="month"></span>
+                        </div>
+                        <div class="gig-details">
+                            <h3>Le Jade Club</h3>
+                            <p>22:00H // Marbella</p>
+                        </div>
+                        <div class="gig-action">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Booking Info">Info</a>
+                        </div>
+                    </div>
+
+                    <div class="gig-item" data-date="2026-03-21T13:00:00">
+                        <div class="gig-date">
+                            <span class="day"></span>
+                            <span class="month"></span>
+                        </div>
+                        <div class="gig-details">
+                            <h3>Cocoa Beach</h3>
+                            <p>13:00H // Marbella</p>
+                        </div>
+                        <div class="gig-action">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Booking Info">Info</a>
+                        </div>
+                    </div>
+
+                    <div class="gig-item" data-date="2026-03-21T22:00:00">
+                        <div class="gig-date">
+                            <span class="day"></span>
+                            <span class="month"></span>
                         </div>
                         <div class="gig-details">
                             <h3>Le Jade</h3>
-                            <p>Friday</p>
+                            <p>22:00H // Marbella</p>
                         </div>
                         <div class="gig-action">
-                            <a href="#" class="btn btn-outline btn-sm">Info</a>
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Booking Info">Info</a>
                         </div>
                     </div>
 
-                    <div class="gig-item" data-date="2026-02-21">
+                    <div class="gig-item" data-date="2026-03-22T17:00:00">
                         <div class="gig-date">
-                            <span class="day">21</span>
-                            <span class="month">FEB</span>
+                            <span class="day"></span>
+                            <span class="month"></span>
                         </div>
                         <div class="gig-details">
-                            <h3>Le Jade</h3>
-                            <p>Saturday</p>
+                            <h3>Beach House</h3>
+                            <p>17:00H // Marbella</p>
                         </div>
                         <div class="gig-action">
-                            <a href="#" class="btn btn-outline btn-sm">Info</a>
-                        </div>
-                    </div>
-
-                    <div class="gig-item" data-date="2026-02-24">
-                        <div class="gig-date">
-                            <span class="day">24</span>
-                            <span class="month">FEB</span>
-                        </div>
-                        <div class="gig-details">
-                            <h3>Private Event</h3>
-                            <p>Macallan // Tuesday</p>
-                        </div>
-                        <div class="gig-action">
-                            <a href="#" class="btn btn-outline btn-sm">Private</a>
-                        </div>
-                    </div>
-
-                    <div class="gig-item" data-date="2026-02-25">
-                        <div class="gig-date">
-                            <span class="day">25</span>
-                            <span class="month">FEB</span>
-                        </div>
-                        <div class="gig-details">
-                            <h3>Private Event</h3>
-                            <p>Macallan // Wednesday</p>
-                        </div>
-                        <div class="gig-action">
-                            <a href="#" class="btn btn-outline btn-sm">Private</a>
-                        </div>
-                    </div>
-
-                    <div class="gig-item" data-date="2026-02-26">
-                        <div class="gig-date">
-                            <span class="day">26</span>
-                            <span class="month">FEB</span>
-                        </div>
-                        <div class="gig-details">
-                            <h3>Private Event</h3>
-                            <p>Macallan // Thursday</p>
-                        </div>
-                        <div class="gig-action">
-                            <a href="#" class="btn btn-outline btn-sm">Private</a>
-                        </div>
-                    </div>
-
-                    <div class="gig-item" data-date="2026-02-27">
-                        <div class="gig-date">
-                            <span class="day">27</span>
-                            <span class="month">FEB</span>
-                        </div>
-                        <div class="gig-details">
-                            <h3>Le Jade</h3>
-                            <p>Friday</p>
-                        </div>
-                        <div class="gig-action">
-                            <a href="#" class="btn btn-outline btn-sm">Info</a>
-                        </div>
-                    </div>
-
-                    <div class="gig-item" data-date="2026-02-28">
-                        <div class="gig-date">
-                            <span class="day">28</span>
-                            <span class="month">FEB</span>
-                        </div>
-                        <div class="gig-details">
-                            <h3>Teal-Jazz - Only You</h3>
-                            <p>Saturday</p>
-                        </div>
-                        <div class="gig-action">
-                            <a href="#" class="btn btn-outline btn-sm">Info</a>
-                        </div>
-                    </div>
-
-                    <div class="gig-item" data-date="2026-03-01">
-                        <div class="gig-date">
-                            <span class="day">1</span>
-                            <span class="month">MAR</span>
-                        </div>
-                        <div class="gig-details">
-                            <h3>Simba</h3>
-                            <p>Sunday</p>
-                        </div>
-                        <div class="gig-action">
-                            <a href="#" class="btn btn-outline btn-sm">Info</a>
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Booking Info">Info</a>
                         </div>
                     </div>
                 </div>
@@ -361,15 +344,15 @@
                         <div class="contact-details">
                             <div class="contact-card">
                                 <h4>Bookings</h4>
-                                <a href="mailto:booking@sergiosignature.com">booking@sergiosignature.com</a>
+                                <a href="mailto:booking@sergiosignature.com" aria-label="Send email for bookings">booking@sergiosignature.com</a>
                             </div>
                             <div class="contact-card">
                                 <h4>Follow</h4>
                                 <div class="social-links-block">
                                     <a href="https://www.instagram.com/sergio.signature/" target="_blank"
-                                        rel="noopener noreferrer">@sergio.signature</a>
+                                        rel="noopener noreferrer" aria-label="Personal Instagram Profile">@sergio.signature</a>
                                     <a href="https://www.instagram.com/sergiotrumpetdj/" target="_blank"
-                                        rel="noopener noreferrer">@sergiotrumpetdj</a>
+                                        rel="noopener noreferrer" aria-label="DJ Instagram Profile">@sergiotrumpetdj</a>
                                 </div>
                             </div>
                         </div>
