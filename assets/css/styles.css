@@ -907,6 +907,17 @@ h3 {
     font-size: 0.9rem;
 }
 
+.footer-credit {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.75rem;
+    color: var(--c-text-muted);
+}
+
+.footer-credit a:hover {
+    color: var(--c-accent);
+}
+
 /* ==========================================================================
    Animations (Scroll Reveal)
    ========================================================================== */
